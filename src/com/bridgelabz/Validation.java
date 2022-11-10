@@ -50,24 +50,35 @@ public class Validation {
 		        }
 		    }
 		 public void checkPasswordRule1() {
-		        System.out.println("-----------------");
+		        System.out.println("************");
 		        System.out.println("Enter Password : ");
 		        String password  = sc.nextLine();
 		        if (Pattern.matches("^[a-zA-z]{8,}",password)) {
-		            System.out.println("Password is Valid---!!");
+		            System.out.println("Password is Valid	");
 		        } else {
-		            System.out.println("Password is Invalid--!!");
+		            System.out.println("Password is Invalid		");
 		            checkPasswordRule1();
 		        }
 		    }
 		 public void checkPasswordRule2() {
-		        System.out.println("-----------------");
+		        System.out.println("************");
 		        System.out.println("Enter Password : ");
 		        String password  = sc.nextLine();
 		        if (Pattern.matches("^[A-z]+[A-Za-z]{8,}",password)) {
-		            System.out.println("Password is Valid---!!");
+		            System.out.println("Password is Valid	");
 		        } else {
-		            System.out.println("Password is Invalid--!!");
+		            System.out.println("Password is Invalid	  ");
+		            checkPasswordRule1();
+		        }
+		    }
+		 public void checkPasswordRule3() {
+		        System.out.println("**************");
+		        System.out.println("Enter Password : ");
+		        String password  = sc.nextLine();
+		        if (Pattern.matches("^[A-Z0-9]+[A-Za-z0-9]{8,}",password)) {
+		            System.out.println("Password is Valid	");
+		        } else {
+		            System.out.println("Password is Invalid   ");
 		            checkPasswordRule1();
 		        }
 		    }
