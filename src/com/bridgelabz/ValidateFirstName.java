@@ -5,6 +5,7 @@ public class ValidateFirstName {
 	        Validation validation=new Validation();
 	        validation.checkFirstName();
 	        validation.checkLastName();
+	        validation.checkEmail();
 
 	    }
 }
