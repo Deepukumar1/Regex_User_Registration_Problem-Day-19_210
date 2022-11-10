@@ -82,4 +82,15 @@ public class Validation {
 		            checkPasswordRule1();
 		        }
 		    }
+		 public void checkPasswordRule4() {
+		        System.out.println("***********");
+		        System.out.println("Enter Password : ");
+		        String password  = sc.nextLine();
+		        if (Pattern.matches("^[A-Z]+[A-Za-z0-9]{7,}[!@#$%^&*()=]+",password)) {
+		            System.out.println("Password is Valid	");
+		        } else {
+		            System.out.println("Password is Invalid    ");
+		            checkPasswordRule4();
+		        }
+		    }
 }
