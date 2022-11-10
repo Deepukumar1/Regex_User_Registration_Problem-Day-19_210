@@ -6,6 +6,7 @@ public class ValidateFirstName {
 	        validation.checkFirstName();
 	        validation.checkLastName();
 	        validation.checkEmail();
+	        validation.checkPhoneNumber();
 
 	    }
 }

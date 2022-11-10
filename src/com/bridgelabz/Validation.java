@@ -38,4 +38,15 @@ public class Validation {
 		            System.out.println("Email is Invalid  ");
 		        }
 		    }
+		 public void checkPhoneNumber() {
+		        System.out.println("****************");
+		        System.out.println("Enter PhoneNumber : ");
+		        String phoneNumber  = sc.nextLine();
+		        if (Pattern.matches("^[0-9]+\s[0-9]{10}", phoneNumber)) {
+		            System.out.println("PhoneNumber is Valid	");
+		        } else {
+		            System.out.println("PhoneNumber is Invalid	");
+		            checkPhoneNumber();
+		        }
+		    }
 }
