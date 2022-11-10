@@ -15,4 +15,16 @@ public class Validation {
 	            System.out.println("First Nmae is Invalid  ");
 	        }
 	    }
+	    
+		public void checkLastName() {
+			 System.out.println("-----------------");
+		        System.out.println("Enter Last Name : ");
+		        String lastName = sc.next();
+		        if (Pattern.matches("^[A-Z]{1}[a-z]{3,}", lastName)) {
+		            System.out.println("LastName is Valid---!!");
+		        } else {
+		            System.out.println("LastName is Invalid--!!");
+		        }
+			
+		}
 }
